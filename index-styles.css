@@ -1,7 +1,7 @@
 /* Remove margin from the body and set default fonts */
 * {
     margin: 0;
-    font-family: 'Fauna One', serif;
+    font-family: 'Judson', serif;
     text-decoration: none;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .nav-content {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,16 +39,20 @@
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 2px;
-    padding: 5px 10px;
     color: black;
     box-sizing: border-box;
     border-radius: 3px;
 }
 
+.nav-link {
+    padding: 5px 10px;
+    margin: 0 2px;
+}
+
 .logo {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: 700;
+    padding: 5px 0;
 }
 
 .nav-link:hover {
@@ -88,12 +92,16 @@
         height: 100vh;
         background: #e56b6f;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: -52%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .logo {
+        padding: 0 10px;
     }
 
     .check-btn {
@@ -117,7 +125,7 @@
 /* Heading sections starts */
 .heading-section {
     height: 100%;
-    width: calc(100vw / 1.618);
+    width: 60%;
     background: #e56b6f;
     display: flex;
     justify-content: center;
@@ -126,7 +134,7 @@
 }
 
 .heading {
-    width: 70%;
+    width: 75%;
 }
 
 h1, #my-name {
@@ -140,4 +148,40 @@ h1, #my-name {
     color: #f6bd60;
 }
 /* Heading section ends */
+
+/* Description sections starts */
+.description-section {
+    width: 40%;
+    height: calc(100vh - 60px);
+    background: #f7ede2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+}
+
+.description {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.description p {
+    margin: 25px 0;
+    line-height: 1.5;
+}
+
+.contact-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.contact-links a {
+    font-size: 24px;
+    color: black;
+}
 
