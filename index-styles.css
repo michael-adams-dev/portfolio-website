@@ -29,7 +29,6 @@
 .nav-options {
     list-style: none;
     display: flex;
-    border: 1px solid black;
     box-sizing: border-box;
     padding: 0;
 }
@@ -46,14 +45,17 @@
     border-radius: 3px;
 }
 
-.nav-link.active, .nav-link:hover {
+.logo {
+    letter-spacing: 5px;
+}
+
+.nav-link:hover {
     background: #ce6063;
     transition: 0.5s;
 }
 
 .check-btn {
     display: none;
-    /* position: absolute; */
     font-size: 24px;
     margin: 0 10px;
     color: black;
@@ -61,11 +63,24 @@
 }
 
 #check {
-    /* display: none; */
-    /* position: absolute; */
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-link, .logo {
+        font-size: 18px;
+    }
+
+    .navbar {
+        height: 50px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .nav-content {
+        width: 100%;
+    }
+    
     .nav-options {
         width: 50vw;
         height: 100vh;
@@ -81,9 +96,11 @@
 
     .check-btn {
         display: block;
+        padding: 0 10px;
     }
 
     #check:checked ~ .nav-options {
         right: 0;
+        transition: 0.7s;
     }
 }
