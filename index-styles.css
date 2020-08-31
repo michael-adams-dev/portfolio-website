@@ -1,0 +1,89 @@
+/* Remove margin from the body and set default fonts */
+* {
+    margin: 0;
+    font-family: 'Fauna One', serif;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: #e56b6f;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+
+}
+
+.nav-options {
+    list-style: none;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.nav-link, .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 2px;
+    padding: 5px 10px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.nav-link.active, .nav-link:hover {
+    background: #ce6063;
+    transition: 0.5s;
+}
+
+.check-btn {
+    display: none;
+    /* position: absolute; */
+    font-size: 24px;
+    margin: 0 10px;
+    color: black;
+    align-self: center;
+}
+
+#check {
+    /* display: none; */
+    /* position: absolute; */
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-options {
+        width: 50vw;
+        height: 100vh;
+        background: #e56b6f;
+        position: absolute;
+        top: 60px;
+        right: -52%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .check-btn {
+        display: block;
+    }
+
+    #check:checked ~ .nav-options {
+        right: 0;
+    }
+}
