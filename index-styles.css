@@ -9,7 +9,7 @@
 .navbar {
     width: 100%;
     height: 60px;
-    background: #e56b6f;
+    background: #b75558;
     display: flex;
     justify-content: center;
     
@@ -56,7 +56,7 @@
 }
 
 .nav-link:hover {
-    background: #ce6063;
+    background: #e56b6f;
     transition: 0.5s;
 }
 
@@ -90,7 +90,7 @@
     .nav-options {
         width: 50vw;
         height: 100vh;
-        background: #e56b6f;
+        background: #b75558;
         position: absolute;
         top: 50px;
         right: -52%;
@@ -158,7 +158,7 @@ h1, #my-name {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .description {
@@ -184,4 +184,4 @@ h1, #my-name {
     font-size: 24px;
     color: black;
 }
-
+/* Description section ends */
