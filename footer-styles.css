@@ -1,0 +1,16 @@
+footer {
+    height: 60px;
+    background: #e56b6f;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 24px;
+}
