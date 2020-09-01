@@ -1,6 +1,6 @@
 .form-section {
     width: 40%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     background: #f7ede2;
     display: flex;
     justify-content: center;

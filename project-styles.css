@@ -1,0 +1,11 @@
+.proj-content {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.proj-card {
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+
