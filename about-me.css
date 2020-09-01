@@ -6,7 +6,7 @@
 }
 
 .about-me-content h1 {
-    border-bottom: 5px solid #f6bd60;
+    border-bottom: 5px solid #355070;
 }
 
 #profile-img {
@@ -16,7 +16,7 @@
 }
 
 .about-me-copy {
-    border-bottom: 5px solid #f6bd60;
+    border-bottom: 5px solid #355070;
     padding-bottom: 15px;
 }
 
@@ -40,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
-    border-bottom: 5px solid #f6bd60;
+    border-bottom: 5px solid #355070;
 }
 
 .about-me-list h2 {

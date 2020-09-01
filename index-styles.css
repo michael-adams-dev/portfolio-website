@@ -1,12 +1,13 @@
 /* Remove margin from the body and set default fonts */
 * {
-    margin: 0;
-    font-family: 'Judson', serif;
     text-decoration: none;
+    margin: 0;
 }
 
 body {
     /* width: 100vw; */
+    font-family: 'Judson', serif;
+    background: #f7ede2;
 }
 
 /* Start of navbar styling */
@@ -32,6 +33,13 @@ body {
 
 .nav-content {
     width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content-alt {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,19 +97,111 @@ body {
     display: none;
 }
 
+.container {
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* Heading sections starts */
+.heading-section {
+    height: 100%;
+    width: 60%;
+    background: #e56b6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.heading {
+    width: 75%;
+}
+
+h1, #my-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+#my-name {
+    color: #f6bd60;
+}
+
+/* Heading section ends */
+
+/* Description sections starts */
+.description-section {
+    width: 40%;
+    height: 100vh;
+    background: #f7ede2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.description {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20%;
+    border-top: 3px solid #355070;
+    border-bottom: 3px solid #355070;
+}
+
+.description p {
+    margin: 25px 0;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.contact-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.contact-links a {
+    font-size: 24px;
+    color: black;
+}
+/* Description section ends */
+
+
 @media only screen and (max-width: 992px) {
-    .nav-link, .logo {
+    .nav-link {
         font-size: 18px;
     }
 
     .navbar {
         height: 50px;
     }
+
+    .heading h1 {
+        font-size: 44px;
+    }
+
+    .description p {
+        font-size: 20px;
+    }
+
+    .contact-links {
+        margin-top: 80px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .index-navbar {
+        position: fixed;
+        top: 0;
+    }
+    
     .nav-content {
-        width: 100%;
+        width: 95%;
     }
     
     .nav-options {
@@ -132,75 +232,31 @@ body {
         right: 0;
         transition: 2s;
     }
+
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .heading-section {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .description-section {
+        width: 100vw;
+        height: auto;
+    }
+
+    .description {
+        margin-top: 60px;
+    }
+
+    .contact-links {
+        margin: 60px 0;
+    }
 }
 /* End of navbar styling */
 
 /* Homepage content starts */
-.container {
-    height: 100vh;
-    display: flex;
-}
-
-/* Heading sections starts */
-.heading-section {
-    height: 100%;
-    width: 60%;
-    background: #e56b6f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.heading {
-    width: 75%;
-}
-
-h1, #my-name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
-    font-weight: 900;
-    line-height: 1.5;
-}
-
-#my-name {
-    color: #f6bd60;
-}
-/* Heading section ends */
-
-/* Description sections starts */
-.description-section {
-    width: 40%;
-    height: 100vh;
-    background: #f7ede2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.description {
-    width: 60%;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 25%;
-}
-
-.description p {
-    margin: 25px 0;
-    line-height: 1.5;
-}
-
-.contact-links {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
-}
-
-.contact-links a {
-    font-size: 24px;
-    color: black;
-}
-/* Description section ends */
