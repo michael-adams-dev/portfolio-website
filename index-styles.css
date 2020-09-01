@@ -10,10 +10,21 @@ body {
 }
 
 /* Start of navbar styling */
+.index-navbar {
+    width: 100%;
+    height: 60px;
+    /* background: #b75558; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .navbar {
     width: 100%;
     height: 60px;
-    background: #b75558;
+    background: #e56b6f;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     
@@ -51,12 +62,14 @@ body {
 .nav-link {
     padding: 5px 10px;
     margin: 0 2px;
+    
 }
 
 .logo {
     letter-spacing: 3px;
     font-weight: 700;
     padding: 5px 0;
+    font-size: 32px;
 }
 
 .nav-link:hover {
@@ -94,7 +107,7 @@ body {
     .nav-options {
         width: 50vw;
         height: 100vh;
-        background: #b75558;
+        background: #e56b6f;
         position: absolute;
         top: 50px;
         right: -52%;
@@ -106,6 +119,7 @@ body {
 
     .logo {
         padding: 0 10px;
+        font-size: 24px;
     }
 
     .check-btn {
@@ -123,7 +137,7 @@ body {
 
 /* Homepage content starts */
 .container {
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
 }
 
@@ -157,7 +171,7 @@ h1, #my-name {
 /* Description sections starts */
 .description-section {
     width: 40%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     background: #f7ede2;
     display: flex;
     flex-direction: column;

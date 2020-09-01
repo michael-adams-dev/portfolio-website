@@ -1,6 +1,6 @@
 .my-work-content {
-    padding: 10px 7%;
-    background: white
+    padding: 20px 7% 0 7%;
+    background: white;
 }
 
 .card-container {
@@ -61,7 +61,7 @@
 }
 
 .card-title button {
-    width: 30%;
+    width: 40%;
     padding: 5px 0;
     border-radius: 5px;
     font-size: 16px;
@@ -88,7 +88,6 @@
 
 .card-day {
     font-size: 36px;
-    font-weight: ;
 }
 
 .card-month {
