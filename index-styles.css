@@ -200,12 +200,12 @@ h1, #my-name {
 
 @media only screen and (max-width: 768px) {
     /* Start of navbar styling */
-    .index-navbar {
+    .index-navbar, .navbar {
         position: fixed;
         top: 0;
     }
     
-    .nav-content {
+    .nav-content, .nav-content-alt {
         width: 90%;
         background: #e56b6f;
     }
