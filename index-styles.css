@@ -88,7 +88,7 @@ body {
 .check-btn {
     display: none;
     font-size: 24px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     color: black;
     align-self: center;
 }
@@ -182,7 +182,11 @@ h1, #my-name {
     }
 
     .heading h1 {
-        font-size: 44px;
+        font-size: 40px;
+    }
+
+    #my-name {
+        font-size: 40px;
     }
 
     .description p {
@@ -195,13 +199,15 @@ h1, #my-name {
 }
 
 @media only screen and (max-width: 768px) {
+    /* Start of navbar styling */
     .index-navbar {
         position: fixed;
         top: 0;
     }
     
     .nav-content {
-        width: 95%;
+        width: 90%;
+        background: #e56b6f;
     }
     
     .nav-options {
@@ -210,7 +216,7 @@ h1, #my-name {
         background: #e56b6f;
         position: absolute;
         top: 50px;
-        right: -52%;
+        right: -50%;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -218,13 +224,11 @@ h1, #my-name {
     }
 
     .logo {
-        padding: 0 10px;
         font-size: 24px;
     }
 
     .check-btn {
         display: block;
-        padding: 0 10px;
     }
 
     #check:checked ~ .nav-options {
@@ -233,9 +237,11 @@ h1, #my-name {
         transition: 2s;
     }
 
+    /* End of navbar styling */
+
     .container {
         flex-direction: column;
-        width: 100vw;
+        max-width: 100vw;
         height: auto;
     }
     
@@ -244,13 +250,18 @@ h1, #my-name {
         width: 100vw;
     }
 
+    .heading {
+        width: 90%;
+    }
+
     .description-section {
         width: 100vw;
-        height: auto;
+        height: calc(100vh - 120px);
     }
 
     .description {
         margin-top: 60px;
+        width: 90%;
     }
 
     .contact-links {
@@ -265,6 +276,6 @@ h1, #my-name {
         font-size: 24px;
     }
 }
-/* End of navbar styling */
+
 
 /* Homepage content starts */
