@@ -22,8 +22,14 @@ footer {
 }
 
 /* Index and contact footer */
-#footer-home {
+#footer-home, #footer-contact {
     display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    #footer-contact {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 768px) {
