@@ -2,12 +2,12 @@
 * {
     text-decoration: none;
     margin: 0;
+    /* max-width: 100vw; */
 }
 
 body {
-    /* width: 100vw; */
     font-family: 'Judson', serif;
-    background: #f7ede2;
+    background: #fcfcfc;
 }
 
 /* Start of navbar styling */
@@ -95,6 +95,7 @@ body {
 
 #check {
     display: none;
+    position: absolute;
 }
 
 .container {
@@ -171,6 +172,11 @@ h1, #my-name {
 }
 /* Description section ends */
 
+@media only screen and (max-width: 1300px) {
+    .nav-content-alt {
+        width: 85%;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .nav-link {
@@ -211,7 +217,7 @@ h1, #my-name {
     }
     
     .nav-options {
-        width: 50vw;
+        width: 45vw;
         height: 100vh;
         background: #e56b6f;
         position: absolute;
