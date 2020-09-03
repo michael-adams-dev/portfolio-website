@@ -26,6 +26,17 @@ footer {
     display: none;
 }
 
+#proj-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    #proj-footer {
+        position: relative;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     #footer-contact {
         display: flex;

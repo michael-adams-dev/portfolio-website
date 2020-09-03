@@ -1,3 +1,4 @@
+ 
 .proj-content {
     width: 70%;
     margin: 20px auto 60px auto;
@@ -21,12 +22,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .proj-sub-heading {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
-    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 .proj-para {
@@ -42,8 +44,52 @@
 }
 
 .proj-img img {
+    display: block;
     width: 100%;
-    height: 80%;
-    box-shadow: 0px 3px 3px 1px rgba(135,135,135,1);
+    height: auto;
+    box-shadow: 0px 1px 3px 2px rgba(135,135,135,1);
+}
+
+@media only screen and (max-width: 1300px) {
+    .proj-content {
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .proj-content {
+        width: 85%;
+        margin: 60px auto;
+    }
+    .proj-card {
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+    .proj-img {
+        width: 100%;
+    }
+    .proj-card-info {
+        width: 100%;
+        padding: 20px 20px 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .proj-content {
+        width: 90%;
+    }
+
+    .proj-card-info {
+        padding: 10px;
+    }
+
+    .proj-para {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .proj-sub-heading {
+        font-size: 20px;
+    }
 }
 
