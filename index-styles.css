@@ -136,7 +136,7 @@ h1, #my-name {
 .description-section {
     width: 40%;
     height: 100vh;
-    background: #f7ede2;
+    background: #fcfcfc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +168,7 @@ h1, #my-name {
 
 .contact-links a {
     font-size: 24px;
-    color: black;
+    color: #355070;
 }
 /* Description section ends */
 

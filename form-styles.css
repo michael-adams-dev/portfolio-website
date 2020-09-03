@@ -1,15 +1,17 @@
 .form-section {
     width: 40%;
     height: 100vh;
-    background: #f7ede2;
+    padding-top: 10%;
+    background: #fcfcfc;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
 form {
-    width: 50%;
+    width: 58%;
 }
 
 .form {
@@ -18,14 +20,35 @@ form {
 }
 
 .form label {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 3px;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
 }
 
-.form input {
-    font-size: 16px;
+.form input, .form textarea {
+    font-size: 14px;
     padding: 5px 5px; 
-    margin-bottom: 7px;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-color: #355070;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form textarea {
+    border: 2px solid #355070;
+}
+
+#submit {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #355070;
+    width: 30%;
+    color: white;
+    align-self: center;
+} 
+
+#contact-contact-links {
+    margin-top: 50px;
 }
