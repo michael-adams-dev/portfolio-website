@@ -1,3 +1,6 @@
+/* This stylesheet contains the styling for the form component found on the contact page */
+
+/* Form styling starts */
 .form-section {
     width: 40%;
     height: 100vh;
@@ -105,3 +108,4 @@ form {
         width: 80%
     }
 }
+/* Form styling ends */

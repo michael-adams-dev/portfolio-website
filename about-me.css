@@ -1,4 +1,5 @@
-    
+/* This stylesheet contains styling for the about me page including the following components: image, profile, skills/interest lists */
+
 #about-me-main {
     display: flex;
     justify-content: center;
@@ -14,11 +15,12 @@
 
 .profile-info {
     display: flex;
-    margin: 20px 0;
+    margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 4px solid #355070;
 }
 
+/* Start of image styling */
 .img-container {
     width: 50%;
 }
@@ -29,15 +31,18 @@
     height: auto;
     border-radius: 5px;
 }
+/* End of image styling */
 
+
+/* Start of profile styling */
 .copy-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-me-copy {
     padding: 0px 15px;
-    /* width: 38%; */
 }
 
 .about-me-copy h2 {
@@ -80,7 +85,10 @@
     color: #e56b6f;
     transition: 0.3s;
 }
+/* End of profile styling */
 
+
+/* Start of skills/interest lists styling */
 .interests-skills {
     display: flex;
 }
@@ -113,6 +121,7 @@
     font-size: 24px;
     margin: 10px 0;
 }
+/* End of skills/interests lists styling */
 
 @media only screen and (max-width: 1300px) {
     .about-me-content {
@@ -148,6 +157,7 @@
         border-bottom: none;
     }
 
+    /* Image starts */
     .img-container {
         width: 100%;
     }
@@ -156,7 +166,10 @@
         max-width: 100%;
         margin: 20px 0;
     }
+    /* Image ends */
 
+
+    /* Profile starts */
     .copy-container {
         width: 100%;
     }
@@ -194,7 +207,10 @@
     .about-me-links a {
         font-size: 18px;
     }
+    /* Profile ends */
 
+
+    /* Lists start */
     .interests-skills {
         display: block;
     }
@@ -227,4 +243,5 @@
         font-size: 24px;
         margin: 10px 0;
     }
+    /* Lists end */
 }

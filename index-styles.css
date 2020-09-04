@@ -1,4 +1,5 @@
-/* Remove margin from the body and set default fonts */
+/* This style sheet contains styles for the navbar, icon links (e.g. GitHub icon), layout of index and contact pages, and the rest of the styling for the index page */
+
 * {
     text-decoration: none;
     margin: 0;
@@ -9,14 +10,13 @@ body {
     background: #fcfcfc;
 }
 
-/* Start of navbar styling */
+/* Start of navbar styling - desktop*/
 .index-navbar {
     width: 100%;
     height: 60px;
     position: absolute;
     display: flex;
     justify-content: center;
-    
 }
 
 .navbar {
@@ -25,7 +25,6 @@ body {
     background: #e56b6f;
     display: flex;
     justify-content: center;
-    
 }
 
 .nav-content {
@@ -44,7 +43,6 @@ body {
 
 .links {
     display: flex;
-
 }
 
 .nav-options {
@@ -100,6 +98,7 @@ body {
     display: none;
     position: absolute;
 }
+/* End of navbar  - desktop */
 
 .container {
     height: 100vh;
@@ -107,7 +106,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Heading sections starts */
+/* Heading sections starts - desktop*/
 .heading-section {
     height: 100%;
     width: 60%;
@@ -132,10 +131,9 @@ h1, #my-name {
 #my-name {
     color: #f6bd60;
 }
+/* Heading section ends - desktop*/
 
-/* Heading section ends */
-
-/* Description sections starts */
+/* Description sections starts - desktop*/
 .description-section {
     width: 40%;
     height: 100vh;
@@ -160,7 +158,9 @@ h1, #my-name {
     line-height: 1.5;
     font-size: 22px;
 }
+/* Description section ends - desktop*/
 
+/* Icon links styling starts - desktop */
 .contact-links {
     width: 50%;
     display: flex;
@@ -177,15 +177,18 @@ h1, #my-name {
     font-size: 32px;
     transition: 0.3s;
 }
-/* Description section ends */
+/* Icon links styling ends - desktop */
 
 @media only screen and (max-width: 1300px) {
+    /* Navbar start */
     .nav-content-alt {
         width: 85%;
     }
+    /* Navbar end */
 }
 
 @media only screen and (max-width: 992px) {
+    /* Navbar start */
     .nav-link {
         font-size: 18px;
     }
@@ -193,7 +196,10 @@ h1, #my-name {
     .navbar {
         height: 50px;
     }
+    /* Navbar end */
 
+
+    /* Heading section start */
     .heading h1 {
         font-size: 40px;
     }
@@ -201,14 +207,22 @@ h1, #my-name {
     #my-name {
         font-size: 40px;
     }
+    /* Heading section end */
 
+    
+    /* Description section start */
     .description p {
         font-size: 20px;
     }
+    /* Description section end */
 
+    
+    /* Icon links start */
     .contact-links {
         margin-top: 80px;
     }
+    /* Icon links end */
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -236,6 +250,14 @@ h1, #my-name {
         align-items: center;
     }
 
+    .nav-options li {
+        margin: 25px 0;
+    }
+
+    .nav-link {
+        font-size: 24px;
+    }
+
     .logo {
         font-size: 24px;
     }
@@ -253,7 +275,6 @@ h1, #my-name {
         right: 0;
         transition: 2s;
     }
-
     /* End of navbar styling */
 
     .container {
@@ -262,6 +283,7 @@ h1, #my-name {
         height: auto;
     }
     
+    /* Heading section start */
     .heading-section {
         height: 100vh;
         width: 100vw;
@@ -270,7 +292,10 @@ h1, #my-name {
     .heading {
         width: 90%;
     }
+    /* Heading section ends */
 
+    
+    /* Description section starts */
     .description-section {
         width: 100vw;
         height: calc(100vh - 120px);
@@ -280,18 +305,14 @@ h1, #my-name {
         margin-top: 60px;
         width: 90%;
     }
+    /* Description section ends */
 
+    
+    /* Icon links start */
     .contact-links {
         margin: 60px 0;
     }
-
-    .nav-options li {
-        margin: 25px 0;
-    }
-
-    .nav-link {
-        font-size: 24px;
-    }
+    /* Icon links ends */
 }
 
 
