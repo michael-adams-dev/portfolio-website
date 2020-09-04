@@ -1,7 +1,7 @@
 .form-section {
     width: 40%;
     height: 100vh;
-    padding-top: 10%;
+    padding-top: 8%;
     background: #fcfcfc;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,14 @@ form {
     border: 2px solid #355070;
 }
 
+#form-heading {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #355070;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
 #submit {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -47,6 +55,7 @@ form {
     width: 30%;
     color: white;
     align-self: center;
+    cursor: pointer;
 } 
 
 #contact-contact-links {
@@ -79,6 +88,7 @@ form {
     .form-section {
         width: 100%;
         align-items: center;
+        height: calc(100vh - 40px);
     }
 
     form {

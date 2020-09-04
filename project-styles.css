@@ -59,7 +59,7 @@
 @media only screen and (max-width: 1200px) {
     .proj-content {
         width: 85%;
-        margin: 60px auto;
+        margin: 20px auto;
     }
     .proj-card {
         flex-direction: column-reverse;
@@ -77,6 +77,11 @@
 @media only screen and (max-width: 768px) {
     .proj-content {
         width: 90%;
+        margin-top: 60px;
+    }
+
+    .proj-content h1 {
+        font-size: 36px;
     }
 
     .proj-card-info {
