@@ -71,10 +71,11 @@
     padding: 4px 2px;
     margin-bottom: 25px;
     letter-spacing: 1px;
+    color: #fcfcfc;
 }
 
 .description button:hover {
-    background: white;
+    background: #fcfcfc;
     color: #355070;
     cursor: pointer;
     transition: 0.3s;

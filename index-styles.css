@@ -2,7 +2,6 @@
 * {
     text-decoration: none;
     margin: 0;
-    /* max-width: 100vw; */
 }
 
 body {
@@ -67,8 +66,12 @@ body {
 
 .nav-link {
     padding: 5px 10px;
-    margin: 0 2px;
-    
+    margin: 0 2px;   
+}
+
+.nav-link:hover {
+    color: #f6bd60;
+    transition: 0.3s;
 }
 
 .logo {
@@ -76,6 +79,14 @@ body {
     font-weight: 700;
     padding: 5px 0;
     font-size: 32px;
+}
+
+.logo:hover {
+    font-size: 36px;
+    font-weight: 800;
+    color: #f6bd60;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .check-btn {
@@ -138,7 +149,6 @@ h1, #my-name {
 
 .description {
     width: 60%;
-    font-size: 20px;
     text-align: center;
     margin-top: 20%;
     border-top: 3px solid #355070;
@@ -148,7 +158,7 @@ h1, #my-name {
 .description p {
     margin: 25px 0;
     line-height: 1.5;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .contact-links {
@@ -161,6 +171,11 @@ h1, #my-name {
 .contact-links a {
     font-size: 24px;
     color: #355070;
+}
+
+.contact-links a:hover {
+    font-size: 32px;
+    transition: 0.3s;
 }
 /* Description section ends */
 
@@ -223,6 +238,10 @@ h1, #my-name {
 
     .logo {
         font-size: 24px;
+    }
+
+    .logo:hover {
+        font-size: 32px;
     }
 
     .check-btn {

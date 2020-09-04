@@ -9,20 +9,30 @@
 }
 
 .about-me-content h1 {
-    border-bottom: 3px solid #355070;
+    border-bottom: 4px solid #355070;
 }
 
 .profile-info {
     display: flex;
     margin: 20px 0;
     padding-bottom: 20px;
-    border-bottom: 3px solid #355070;
+    border-bottom: 4px solid #355070;
+}
+
+.img-container {
+    width: 50%;
 }
 
 #profile-img {
-    max-width: 25%;
+    display: block;
+    width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.copy-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .about-me-copy {
@@ -44,6 +54,33 @@
     line-height: 1.3;
 }
 
+.copy-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.about-me-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #355070;
+}
+
+.about-me-links a:hover {
+    color: #e56b6f;
+    transition: 0.3s;
+}
+
 .interests-skills {
     display: flex;
 }
@@ -55,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
-    border-bottom: 5px solid #355070;
+    border-bottom: 4px solid #355070;
 }
 
 .about-me-list h2 {
@@ -83,9 +120,22 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .profile-info {
+        justify-content: space-between;
+    }
+    .img-container {
+        width: 40%;
+    }
+    .copy-container {
+        width: 60%;
+    }
+    .about-me-links a {
+        font-size: 22px;
+    }
+}
+
 @media only screen and (max-width: 768px) {    
-    
-    
     .about-me-content {
         width: 90%;
         height: auto;
@@ -98,20 +148,27 @@
         border-bottom: none;
     }
 
+    .img-container {
+        width: 100%;
+    }
+
     #profile-img {
         max-width: 100%;
         margin: 20px 0;
     }
 
+    .copy-container {
+        width: 100%;
+    }
+
     .about-me-copy {
         padding: 0 0 15px 0;
-        border-bottom: 5px solid #355070;
         width: 100%;
     }
 
     .about-me-copy h2 {
         font-family: 'Montserrat', sans-serif;
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 800;
         line-height: 1.5;
         margin-bottom: 15px;
@@ -121,6 +178,21 @@
         font-size: 20px;
         margin: 15px 0;
         line-height: 1.3;
+    }
+
+    .copy-container h3 {
+        margin-top: 15px;
+        padding-left: 0px;
+        font-size: 30px;
+    }
+
+    .about-me-links {
+        border-bottom: 4px solid #355070;
+        padding: 15px 0 40px 0;
+    }
+
+    .about-me-links a {
+        font-size: 18px;
     }
 
     .interests-skills {
@@ -134,7 +206,7 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 25px;
-        border-bottom: 5px solid #355070;
+        border-bottom: 4px solid #355070;
     }
 
     .about-me-list h2 {

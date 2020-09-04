@@ -15,7 +15,7 @@
     <nav class="navbar">
         
         <div class="nav-content-alt">
-            <label class="logo">MA</label>
+            <a href="index.html" id="logo"><label class="logo" for="logo">MA</label></a>
 
             <div class="links">
                 <input type="checkbox" id="check">
@@ -24,7 +24,7 @@
                 </label>
                 
                 <ul class="nav-options">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about-me.html" class="nav-link">About</a></li>
                     <li><a href="work-blog.html" class="nav-link">Work</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -40,13 +40,26 @@
             <h1>About Me.</h1>
             
             <div class="profile-info">
-                <img src="imgs/profile.jpg" alt="Michael Adams" id="profile-img">
-
-                <div class="about-me-copy">
-                    <h2>My name is Michael. I build websites.</h2>
-                    <p>After working at a marketing agency for two years, I decided to embrace my love of tech and become a web developer.</p>
-                    <p>Now I combine my new found technical skills with my understanding of positive user experiences to create websites that are beautiful, accessible, and easy to use.</p>
+                <div class="img-container">
+                    <img src="imgs/profile.jpg" alt="Michael Adams" id="profile-img">
                 </div>
+                
+                <div class="copy-container">
+                    <div class="about-me-copy">
+                        <h2>My name is Michael. I build websites.</h2>
+                        <p>After working at a marketing agency for two years, I decided to embrace my love of tech and become a web developer.</p>
+                        <p>Now I combine my new found technical skills with my understanding of positive user experiences to create websites that are beautiful, accessible, and easy to use.</p>
+                    </div>
+
+                    <h3>Places you can find me.</h3>
+
+                    <div class="about-me-links">
+                        <a href="https://www.linkedin.com/in/michael-adams-bab402160/" target="_blank">LinkedIn <i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/michael-adams-dev" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                        <a href="files/MA-resume.pdf" target="_blank" id="resume">My resume</a>
+                    </div>
+                </div>
+
             </div>
 
             <div class="interests-skills">
